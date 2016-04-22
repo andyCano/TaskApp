@@ -25,7 +25,7 @@ import com.todoroo.andlib.utility.DateUtilities;
 import com.todoroo.astrid.dao.UserActivityDao;
 import com.todoroo.astrid.data.Task;
 import com.todoroo.astrid.data.UserActivity;
-import com.todoroo.astrid.files.FilesControlSet;
+//import com.todoroo.astrid.files.FilesControlSet;
 import com.todoroo.astrid.notes.CommentsController;
 import com.todoroo.astrid.service.TaskDeleter;
 import com.todoroo.astrid.service.TaskService;
@@ -228,9 +228,9 @@ public final class TaskEditFragment extends InjectingFragment implements Toolbar
         return getFragment(EditTitleControlSet.TAG);
     }
 
-    private FilesControlSet getFilesControlSet() {
-        return getFragment(FilesControlSet.TAG);
-    }
+    //private FilesControlSet getFilesControlSet() {
+      //  return getFragment(FilesControlSet.TAG);
+    //}
 
     @SuppressWarnings("unchecked")
     private <T extends TaskEditControlFragment> T getFragment(int tag) {

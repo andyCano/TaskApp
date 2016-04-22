@@ -6,20 +6,20 @@ import android.view.ContextMenu;
 
 import com.todoroo.astrid.activity.BeastModePreferences;
 import com.todoroo.astrid.data.Task;
-import com.todoroo.astrid.files.FilesControlSet;
+//import com.todoroo.astrid.files.FilesControlSet;
 import com.todoroo.astrid.repeats.RepeatControlSet;
 import com.todoroo.astrid.tags.TagsControlSet;
 import com.todoroo.astrid.timers.TimerControlSet;
 import com.todoroo.astrid.ui.EditTitleControlSet;
-import com.todoroo.astrid.ui.HideUntilControlSet;
-import com.todoroo.astrid.ui.ReminderControlSet;
+//import com.todoroo.astrid.ui.HideUntilControlSet;
+//import com.todoroo.astrid.ui.ReminderControlSet;
 
 import org.tasks.BuildConfig;
 import org.tasks.R;
 import org.tasks.preferences.Preferences;
-import org.tasks.ui.CalendarControlSet;
+//import org.tasks.ui.CalendarControlSet;
 import org.tasks.ui.DeadlineControlSet;
-import org.tasks.ui.DescriptionControlSet;
+//import org.tasks.ui.DescriptionControlSet;
 import org.tasks.ui.PriorityControlSet;
 import org.tasks.ui.TaskEditControlFragment;
 
@@ -68,22 +68,22 @@ public class TaskEditControlSetFragmentManager {
             EditTitleControlSet.TAG,
             DeadlineControlSet.TAG,
             TimerControlSet.TAG,
-            DescriptionControlSet.TAG,
-            CalendarControlSet.TAG,
+            //DescriptionControlSet.TAG,
+            //CalendarControlSet.TAG,
             PriorityControlSet.TAG,
-            HideUntilControlSet.TAG,
-            ReminderControlSet.TAG,
-            FilesControlSet.TAG,
+            //HideUntilControlSet.TAG,
+            //ReminderControlSet.TAG,
+            //FilesControlSet.TAG,
             TagsControlSet.TAG,
             RepeatControlSet.TAG,
             CommentBarFragment.TAG
     };
 
-    static {
-        if (BuildConfig.DEBUG && TASK_EDIT_CONTROL_FRAGMENT_ROWS.length != TASK_EDIT_CONTROL_SET_FRAGMENTS.length) {
-            throw new AssertionError();
-        }
-    }
+    //static {
+      //  if (BuildConfig.DEBUG && TASK_EDIT_CONTROL_FRAGMENT_ROWS.length != TASK_EDIT_CONTROL_SET_FRAGMENTS.length) {
+        //    throw new AssertionError();
+        //}
+    //}
 
     private final Map<String, Integer> controlSetFragments = new LinkedHashMap<>();
     private final List<String> displayOrder;
@@ -156,16 +156,16 @@ public class TaskEditControlSetFragmentManager {
                 return new DeadlineControlSet();
             case PriorityControlSet.TAG:
                 return new PriorityControlSet();
-            case DescriptionControlSet.TAG:
-                return new DescriptionControlSet();
-            case CalendarControlSet.TAG:
-                return new CalendarControlSet();
-            case HideUntilControlSet.TAG:
-                return new HideUntilControlSet();
-            case ReminderControlSet.TAG:
-                return new ReminderControlSet();
-            case FilesControlSet.TAG:
-                return new FilesControlSet();
+            //case DescriptionControlSet.TAG:
+                //return new DescriptionControlSet();
+            //case CalendarControlSet.TAG:
+              //  return new CalendarControlSet();
+            //case HideUntilControlSet.TAG:
+              //  return new HideUntilControlSet();
+            //case ReminderControlSet.TAG:
+              //  return new ReminderControlSet();
+            //case FilesControlSet.TAG:
+              //  return new FilesControlSet();
             case TimerControlSet.TAG:
                 return new TimerControlSet();
             case TagsControlSet.TAG:
